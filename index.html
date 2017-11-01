@@ -3,7 +3,6 @@
 <html lang="en">
 
 	<head>
-
 		<meta charset="utf-8" />
 
 		<title>Snake Game</title>
@@ -101,7 +100,7 @@
 							ctx.clearRect(dir[0] * 10, dir[1] * 10, 10, 10);
 						}
 					} else if (!turn.length) {
-						if (confirm("You lost! Play again? Your Score is " + score)) {
+						if (confirm("(DO NOT PRESS 'CANCEL') You lost! Play again? Your Score is " + score)) {
 							ctx.clearRect(0, 0, 450, 300);
 							queue = [];
 							elements = 1;
